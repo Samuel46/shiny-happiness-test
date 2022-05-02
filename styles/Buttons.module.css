@@ -1,0 +1,35 @@
+.floatingButtonContainer {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.floatingButton {
+  border: 1px solid transparent;
+  border-radius: var(--rounded-md);
+  background-color: var(--color-primary);
+  color: var(--text-color-primary);
+  cursor: pointer;
+  padding: var(--spacing-md) var(--spacing-md);
+  transition: all 0.2s ease-in-out;
+}
+
+.floatingButton:hover {
+  background-color: var(--background-color-hover);
+}
+
+.floatingButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media screen and (min-width: 480px) {
+  .floatingButtonContainer {
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  .floatingButton {
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+}

@@ -1,0 +1,41 @@
+:root {
+	--color-primary: #009b86;
+	--page-background-color: #0d2436;
+	--page-background-color-alt: #ffffff;
+	--text-color-primary: #ffffff;
+	--text-color-primary-hover: #cccccc;
+	--background-color-hover: #34ac9c;
+	--rounded-sm: 0.25rem;
+	--rounded-md: 0rem;
+	--rounded-lg: 1rem;
+	--spacing-sm: 0.5rem;
+	--spacing-md: 1rem;
+	--spacing-lg: 2rem;
+	--font-sm: 0.75rem;
+	--font-md: 0.875rem;
+	--font-lg: 1rem;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+		Helvetica Neue, sans-serif;
+	color: var(--text-color-primary);
+	background-color: var(--page-background-color);
+	font-size: var(--font-lg);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}

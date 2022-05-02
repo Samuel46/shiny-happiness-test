@@ -1,0 +1,1 @@
+export { NomineeCard } from './NomineeCard';

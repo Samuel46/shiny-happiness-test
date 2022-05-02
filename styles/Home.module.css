@@ -1,0 +1,130 @@
+.pageTitle {
+	font-size: 2em;
+	margin-bottom: var(--spacing-lg);
+	text-align: center;
+}
+
+.categoriesContainer {
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 100%;
+	padding: 0 var(--spacing-sm);
+}
+
+.categoryContainer {
+	margin-bottom: var(--spacing-md);
+}
+
+.categoryContainer:last-child {
+	margin-bottom: 0;
+}
+
+.categoryTitleContainer {
+	padding: 0 var(--spacing-sm);
+}
+
+.categoryTitle {
+	background-color: var(--color-primary);
+	border-radius: var(--rounded-sm);
+	margin-bottom: var(--spacing-sm);
+	padding: var(--spacing-sm);
+}
+
+.categoryContent {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nomineeCardContainer {
+	padding: var(--spacing-sm);
+	width: 100%;
+}
+
+.nomineeCard {
+	background-color: var(--page-background-color-alt);
+	color: var(--page-background-color);
+	border-radius: var(--rounded-sm);
+	height: 100%;
+	padding: var(--spacing-sm);
+	transition: all 0.2s ease-in-out;
+}
+
+.nomineeCard:hover,
+.nomineeCardSelected {
+	background-color: var(--background-color-hover);
+	color: var(--text-color-primary);
+}
+
+.nomineeCard:hover > .nomineeCardImageContainer,
+.nomineeCardSelected > .nomineeCardImageContainer {
+	border-color: var(--page-background-color-alt);
+}
+
+.nomineeCardTitle {
+	margin: var(--spacing-sm);
+	margin-top: 0;
+	text-align: center;
+}
+
+.nomineeCardImageContainer {
+	align-items: center;
+	border-radius: 100%;
+	border: 1px solid var(--page-background-color);
+	display: flex;
+	justify-content: center;
+	height: 100px;
+	padding: 1px;
+	width: 100px;
+	margin: 0 auto;
+	transition: all 0.2s ease-in-out;
+}
+
+.nomineeCardImage {
+	border-radius: 100%;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.nomineeCardButtonContainer {
+	margin: var(--spacing-md) var(--spacing-sm);
+	text-align: center;
+}
+
+.nomineeCardButton {
+	background-color: var(--color-primary);
+	border-radius: var(--rounded-md);
+	border: 1px solid transparent;
+	color: var(--text-color-primary);
+	cursor: pointer;
+	padding: var(--spacing-sm) var(--spacing-lg);
+	transition: all 0.2s ease-in-out;
+}
+
+.nomineeCardButton:hover {
+	background-color: var(--background-color-hover);
+	border-color: var(--page-background-color-alt);
+}
+
+.nomineeCardSelected {
+	background-color: var(--color-primary);
+}
+
+.yourVoteTitle {
+	margin-top: 0;
+	margin-bottom: var(--spacing-md);
+	text-align: center;
+	color: var(--page-background-color);
+}
+
+@media screen and (min-width: 480px) {
+	.nomineeCardContainer {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.nomineeCardContainer {
+		width: 33.33333%;
+	}
+}

@@ -1,0 +1,66 @@
+.baseModalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.baseModalContainer {
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--page-background-color-alt);
+  border-radius: var(--rounded-sm);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  max-height: 90%;
+  position: relative;
+}
+
+.modalHeader {
+  margin-bottom: var(--spacing-md);
+}
+
+.modalHeaderTitle {
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: var(--spacing-md);
+  color: var(--page-background-color);
+}
+
+.modalBody {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.modalFooter {
+  margin-top: var(--spacing-md);
+}
+
+.dismissModalButtonContainer {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 5;
+}
+
+.dismissModalButton {
+  border: 1px solid transparent;
+  border-radius: var(--rounded-sm);
+  background-color: var(--color-primary);
+  color: var(--text-color-primary);
+  cursor: pointer;
+  padding: var(--spacing-sm) var(--spacing-sm);
+  transition: all 0.2s ease-in-out;
+}
+
+.dismissModalButton:hover {
+  background-color: var(--background-color-hover);
+}
